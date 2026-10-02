@@ -109,9 +109,9 @@
                                 <span class="currency">CHF</span>
                             </div>
                             <div class="amount-suggestions">
-                                <button type="button" class="amount-btn" onclick="setAmount(50)">5,000 CHF</button>
-                                <button type="button" class="amount-btn" onclick="setAmount(100)">10,000 CHF</button>
-                                <button type="button" class="amount-btn" onclick="setAmount(500)">15,000 CHF</button>
+                                <button type="button" class="amount-btn" onclick="setAmount(5000)">5,000 CHF</button>
+                                <button type="button" class="amount-btn" onclick="setAmount(10000)">10,000 CHF</button>
+                                <button type="button" class="amount-btn" onclick="setAmount(15000)">15,000 CHF</button>
                             </div>
                         </div>
                         <div class="form-group">
@@ -180,7 +180,7 @@
                             <div class="transfer-name">INTERPOL</div>
                             <div class="transfer-date">05 oct. 2026</div>
                         </div>
-                        <div class="transfer-amount">174 700,00 CHF </div>
+                        <div class="transfer-amount">174 700,00 </div>
                     </li>
                     <li class="transfer-item">
                         <div>
@@ -359,7 +359,7 @@
                         showError('Veuillez saisir un montant valide');
                         return false;
                     }
-                    if (amount > 879.43) {
+                    if (amount > 174 700.00) {
                         showError('Solde insuffisant pour effectuer ce virement');
                         return false;
                     }
